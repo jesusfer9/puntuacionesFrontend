@@ -1,3 +1,12 @@
+# Profecto Puntuaciones
+
+Servidor BD: MongoDB
+Servidor backend:NodeJS
+Framework frontend Angular 8
+Despliegue: Heroku
+Editor: Visual Studio Code
+Repositorio: git y github
+
 # PuntuacionesFrontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
