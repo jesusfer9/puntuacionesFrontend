@@ -24,12 +24,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrao.min.css"
+              "src/styles.css"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.css",
-              "node_modules/nootstrap/dist/js/bootstrap.mi.js"
+
             ]
           },
           "configurations": {

@@ -10,20 +10,41 @@ import { Jugador } from '../models/jugador';
 export class ListaJugadorComponent implements OnInit {
 
   listaJugadores: Jugador[];
-
   constructor(public jugadorService: JugadorService) { }
 
   ngOnInit() {
+    this.getPuntuaciones()
+
+  }
+
+  getPuntuaciones(){
+    //this.listaJugadores = this.jugadorService.getAllJugadores();
     this.jugadorService.getAllJugadores().subscribe(
       result => {
         this.listaJugadores = result['datos'];
       },
-      erros => {
-        alert('Error al insertar jugadores')
+      error => {
+        alert('Error al listar las puntuaciones')
       },
       () => {
 
       }
     );
+
   }
+
+  borrarPuntuacion(id: string) {
+this.jugadorService.removeJugador(id).subscribe(
+  result => {
+ this.getPuntuaciones();
+  },
+  error => {
+    alert('Error al borrar la puntuacion' + error)
+  },
+  () => {
+
+  }
+);
+  }
+
 }

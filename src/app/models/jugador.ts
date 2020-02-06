@@ -1,7 +1,10 @@
 export class Jugador {
   constructor(
-  id: string,
-  nombre: string,
-  puntuacion: number
-  ) { }
+   public _id: string,
+   public nombre: string,
+    public puntuacion: number,
+  ) {
+
+  }
 }
+
